@@ -10,7 +10,6 @@ function App() {
     <BrowserRouter>
       <Switch>
         <Route path={"/"} render={(routeProps) => <Main {...routeProps}/>}></Route>
-
       </Switch>
     </BrowserRouter>
   );

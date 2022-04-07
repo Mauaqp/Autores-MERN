@@ -21,7 +21,7 @@ const AuthorsList = (props) => {
     // USE EFFECT PARA RENDERIZADO EN CARGA 
     useEffect(() => {
         findAllAuthors()
-    }, [])
+    }, []);
 
     return (
         <div>

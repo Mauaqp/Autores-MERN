@@ -6,15 +6,7 @@ const AuthorForm = (props) => {
     const {initialAuthor, onSubmitProp} = props;
 
     const [author, setAuthor] = useState(initialAuthor);
-
-    // handle
-    const handleOnChange = (e) => {
-        setAuthor({
-            ...author,
-            [e.target.name] : e.target.value
-        })
-    }
-
+    
     // onSubmit - createAuthor
     const handleCreateAuthor = (e) => {
         e.preventDefault();
@@ -23,6 +15,13 @@ const AuthorForm = (props) => {
         setAuthor(initialAuthor);
     }
 
+    // handle
+    const handleOnChange = (e) => {
+        setAuthor({
+            ...author,
+            [e.target.name] : e.target.value
+        })
+    }
 
     return (
         <div>
